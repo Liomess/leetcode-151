@@ -1,0 +1,12 @@
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        l=s.split(" ")
+        newl=l[::-1]
+
+        ans=""
+        for i in newl:
+            if i!="":
+                ans=ans+i+" "
+        n=len(ans)
+        ans=ans[0:n-1]
+        return ans
